@@ -82,6 +82,7 @@
   <ItemGroup>
     <Content Include="Documentation\AddInfoToActionMenu.txt" />
     <Content Include="Documentation\createsampletable.sql" />
+    <Content Include="Documentation\SampleCode.html" />
     <Content Include="Documentation\web.config.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
