@@ -80,7 +80,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="createsampletable.sql" />
+    <Content Include="Documentation\AddInfoToActionMenu.txt" />
+    <Content Include="Documentation\createsampletable.sql" />
+    <Content Include="Documentation\web.config.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

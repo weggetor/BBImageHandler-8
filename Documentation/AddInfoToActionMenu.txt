@@ -1,0 +1,17 @@
+﻿/admin/Menus/ModuleActions/ModuleActions.js
+--------------------------------------------------- 
+ 
+Search (~ line 372): var menuRoot = menu.find("ul");
+Insert after: 
+		 buildInfoMenu(menuRoot, "Info", "actionMenuInfo","info");
+ 
+Search (~ line 231): function buildMoveMenu(root, rootText, rootClass, rootIcon) { 
+Insert before:
+		function buildInfoMenu(root, rootText, rootClass, rootIcon) {
+             var parent = buildMenuRoot(root, rootText, rootClass, rootIcon);
+             var htmlString = "<img src=\"dnnimagehandler.ashx?mode=modinfo&moduleid=" + moduleId + "&tabid=" + tabId + "\" />"
+             parent.append(htmlString);
+         }
+
+		 
+		 
