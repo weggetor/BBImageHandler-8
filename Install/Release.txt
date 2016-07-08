@@ -1,0 +1,5 @@
+﻿<h2>Release notes V 2.0.0</h2>
+<ul>
+	<li>First version of BBImagehandler as extension for DNN8 dnnImagehandler. Adds the missing startimages of old bbimagehandler.</li>
+</ul>
+

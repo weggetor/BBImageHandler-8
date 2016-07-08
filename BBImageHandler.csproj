@@ -77,6 +77,7 @@
     <EmbeddedResource Include="Images\Thermometer.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Install\BBImageHandler.dnn" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +85,8 @@
     <Content Include="Documentation\createsampletable.sql" />
     <Content Include="Documentation\SampleCode.html" />
     <Content Include="Documentation\web.config.txt" />
+    <Content Include="Install\License.txt" />
+    <Content Include="Install\Release.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

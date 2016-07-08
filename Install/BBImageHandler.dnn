@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="BBImageHandler" type="Library" version="2.0.0">
+      <friendlyName>Bitboxx ImageHandler</friendlyName>
+      <description>An imagehandler extension for DNN8+ </description>
+      <owner>
+        <name>Torsten Weggen</name>
+        <organization>indisoftware GmbH</organization>
+        <url>http:://www.bitboxx.net</url>
+        <email>info@bitboxx.net</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="Release.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">08.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <path>bin</path>
+              <name>Bitboxx.Services.GeneratedImage.dll</name>
+              <version>2.0.0.1</version>
+            </assembly>
+            <assembly>
+              <path>bin</path>
+              <name>zxing.dll</name>
+              <version>0.14.0.0</version>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="Config">
+          <config>
+            <configFile>web.config</configFile>
+            <install>
+              <configuration>
+                <nodes>
+                  <node path="/configuration/appSettings" action="update" key="key" collision="ignore">
+                    <add key="DnnImageHandler.Percent" value="Bitboxx.Services.GeneratedImage.Percent,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.Thermometer" value="Bitboxx.Services.GeneratedImage.Thermometer,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.BarChart" value="Bitboxx.Services.GeneratedImage.BarChart,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.Barcode" value="Bitboxx.Services.GeneratedImage.Barcode,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.Counter" value="Bitboxx.Services.GeneratedImage.Counter,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.YearSchedule" value="Bitboxx.Services.GeneratedImage.YearSchedule,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.WebThumb" value="Bitboxx.Services.GeneratedImage.WebThumb,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.DbImage" value="Bitboxx.Services.GeneratedImage.DbImage,Bitboxx.Services.GeneratedImage" />
+                    <add key="DnnImageHandler.ModInfo" value="Bitboxx.Services.GeneratedImage.ModInfo,Bitboxx.Services.GeneratedImage" />
+                  </node>
+                </nodes>
+              </configuration>
+            </install>
+            <uninstall>
+              <configuration>
+                <nodes>
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.Percent']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.Thermometer']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.Percent']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.BarChart']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.Barcode']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.Counter']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.YearSchedule']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.WebThumb']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.DbImage']" action="remove" />
+                  <node path="/configuration/appSettings/add[@key='DnnImageHandler.ModInfo']" action="remove" />
+                </nodes>
+              </configuration>
+            </uninstall>
+          </config>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

@@ -64,6 +64,9 @@ namespace Bitboxx.Services.GeneratedImage
             Bitmap emptyBmp = new Bitmap(1, 1, PixelFormat.Format1bppIndexed);
             emptyBmp.MakeTransparent();
 
+            if (String.IsNullOrWhiteSpace(Connection))
+                Connection = "SiteSqlServer";
+
             ConnectionStringSettings conn = ConfigurationManager.ConnectionStrings[Connection];
 
             if (conn == null || string.IsNullOrEmpty(Table) || string.IsNullOrEmpty(IdField) ||
