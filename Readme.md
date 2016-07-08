@@ -19,8 +19,8 @@ Display an image stored in a database field
 Sample: 
 
 **/dnnimagehandler.ashx?mode=dbimage&table=MyImages&ImageField=ImageData&idField=ImageID&idValue=3**
-
-![Database Image](documentation/dbimage.jpg)
+https://raw.githubusercontent.com/weggetor/BBImageHandler-8/master/
+![Database Image](https://raw.githubusercontent.com/weggetor/BBImageHandler-8/master/documentation/dbimage.jpg)
 
 Parameters:
 - **table**: Name of the table in database
