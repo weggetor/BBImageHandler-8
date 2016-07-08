@@ -79,6 +79,7 @@
   <ItemGroup>
     <None Include="Install\BBImageHandler.dnn" />
     <None Include="packages.config" />
+    <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Documentation\AddInfoToActionMenu.txt" />
