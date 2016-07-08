@@ -20,7 +20,7 @@ Sample:
 
 **/dnnimagehandler.ashx?mode=dbimage&table=MyImages&ImageField=ImageData&idField=ImageID&idValue=3**
 
-![Database Image](dbimage.jpg)
+![Database Image](documentation/dbimage.jpg)
 
 Parameters:
 - **table**: Name of the table in database
@@ -37,7 +37,7 @@ Sample:
 
 **/dnnImagehandler.ashx?mode=barcode&width=150&Height=150&type=qrcode&content=this%20is%20the%20barcode%20content**
 
-![Barcode Image](barcode.jpg)
+![Barcode Image](documentation/barcode.jpg)
 
 Parameters:
 - **type**: upca, ean8, ean13, code39, code128, itf, codabar, plessey, msi, qrcode, pdf417, aztec, datamatrix 
@@ -54,7 +54,7 @@ Sample:
 
 **/dnnImagehandler.ashx?mode=thermometer&degree=0&h=150** (degree in steps a 10 from 0 to 100)
 
-![Thermometer](thermometer.jpg)
+![Thermometer](documentation/thermometer.jpg)
 
 Parameters:
 - **degree**: value between 0 and 100
@@ -68,11 +68,11 @@ Sample:
 
 **/dnnImagehandler.ashx?mode=percent&type=circle&percentage=40&color=orange&w=100**
 
-![Percent type=circle](percent1.jpg)
+![Percent type=circle](documentation/percent1.jpg)
 
 **/dnnImagehandler.ashx?mode=percent&type=bar&percentage=40&color=orange&w=200**
 
-![Percent type=bar](percent2.jpg)
+![Percent type=bar](documentation/percent2.jpg)
 
 Parameters:
 - **type**: circle, bar
@@ -87,7 +87,7 @@ Sample:
 
 **/dnnImagehandler.ashx?mode=counter&filename=images/counter.gif&Value=1024&digits=5**
 
-![Counter image](counter.jpg)
+![Counter image](documentation/counter.jpg)
 
 Parameters:
 - **filename**: Must be special counter image file with digits 0 to 9 with similar width per digit
@@ -102,7 +102,7 @@ Sample:
 
 **/dnnImagehandler.ashx?mode=webthumb&url=http%3A%2F%2Fwww.huffingtonpost.de&ratio=screen&w=400**
 
-![Web thumbnail image](webthumb.jpg)
+![Web thumbnail image](documentation/webthumb.jpg)
 
 Parameters:
 - **url**: url-encoded web address
@@ -117,7 +117,7 @@ Sample:
 
 **/dnnImagehandler.ashx?mode=yearschedule&culture=de-de&matrix=1116611111661111166111...**
 
-![Year schedule image](yearschedule.jpg)
+![Year schedule image](documentation/yearschedule.jpg)
 
 Parameters:
 - **color**: color of background (optional, default = white) 
@@ -132,7 +132,7 @@ Sample:
 
 **/dnnImagehandler.ashx?mode=barchart&xaxis=man,woman,kids,grandparents&yaxis=10,20,30,20&color=green**
 
-![Bar chart](barchart.jpg) 
+![Bar chart](documentation/barchart.jpg) 
 
 Parameters:
 - **xaxis**: comma seperated list of bar captions 
@@ -147,7 +147,7 @@ Sample:
 
 **/dnnimagehandler.ashx?mode=modinfo&tabid=59&moduleid=414**
 
-![Module Info](modinfo.jpg)
+![Module Info](documentation/modinfo.jpg)
 
 Parameters:
 - **tabid**: id of the tab (page) the module sits on
@@ -157,7 +157,7 @@ Parameters:
 
 ## Extending the DNN action menu ##
 
-![Info menu](infomenu.jpg)
+![Info menu](documentation/infomenu.jpg)
 
 To add an "info" action menu to your module toolbar, do the following hack. **Please be aware that this hack will be overwritten with every DNN update !**
 
